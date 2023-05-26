@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Front controller
  *
@@ -49,3 +48,4 @@ try {
             break;
     }
 }
+?>
