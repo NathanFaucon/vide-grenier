@@ -10,7 +10,7 @@ body {
 body.light {
   background-color: #ffffff; }
   body.light .content-wrapper {
-    background-color: #fbfdfe; }
+    background-color: #256c8f; }
 
 body.dark {
   background-color: #242424; }
@@ -118,7 +118,7 @@ ul.dropdown-menu {
     ul.dropdown-menu li:last-child {
       border: none; }
     ul.dropdown-menu li:nth-child(even) {
-      background-color: #fbfdfe; }
+      background-color: #256c8f; }
 
 .tooltip-inner {
   background-color: #44474e;
@@ -626,7 +626,7 @@ video {
 * Content Index
 */
 .content-wrapper {
-  background-color: #fbfdfe; }
+  background-color: #256c8f; }
 
 .content-block .cb-header {
   padding: 20px 0;
@@ -652,7 +652,7 @@ video {
     .content-block.head-div.head-arrow .head-arrow-icon {
       position: absolute;
       width: 80px;
-      background-color: #fbfdfe;
+      background-color: #256c8f;
       top: 0;
       left: 50%;
       align-items: center;
@@ -1679,7 +1679,7 @@ footer {
           background-color: #fbfdfe; } }
     .login-wraper .login-window .l-form {
       text-align: left;
-      background-color: #fbfdfe;
+      background-color: #256c8f;
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       padding: 25px 70px 70px; }
@@ -1731,7 +1731,7 @@ footer {
     padding-bottom: 50px;
     width: 280px; }
   .banner-text .b-text {
-    color: #ffffff;
+    color: #000000;
     font-size: 80px;
     text-align: left;
     line-height: 80px; }
@@ -2048,7 +2048,7 @@ footer {
     border: solid 1px #7e7e7e;
     border-radius: 14px;
     padding: 3px 12px 6px 12px;
-    background-color: #fbfdfe; }
+    background-color: #256c8f; }
     .single-article .showless a:hover {
       color: #ea2c5a;
       border-color: #ea2c5a; }

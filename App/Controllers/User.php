@@ -25,7 +25,8 @@ class User extends \Core\Controller
     {
         if(isset($_POST['submit'])){
             $f = $_POST;
-
+            var_dump($f);
+            print_r($f);
             // TODO: Validation
 
             $this->login($f);
@@ -159,3 +160,4 @@ class User extends \Core\Controller
     }
 
 }
+?>
