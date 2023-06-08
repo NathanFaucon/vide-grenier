@@ -5,7 +5,6 @@
  *
  * PHP version 7.0
  */
-
 session_start();
 
 /**
@@ -49,3 +48,4 @@ try {
             break;
     }
 }
+?>

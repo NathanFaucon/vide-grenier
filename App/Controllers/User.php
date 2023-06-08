@@ -29,6 +29,10 @@ class User extends \Core\Controller
             // TODO: Validation
 
             $this->login($f);
+            $rememberMe = isset($f['remember']) && $f['remember'] === 'on';
+            if ($rememberMe) {
+                setcookie('remember_me', '1', time() + (60 * 60 * 24 * 30), '/'); // Exemple de durée de validité de 30 jours
+            }
 
             // Si login OK, redirige vers le compte
             header('Location: /account');
@@ -52,7 +56,14 @@ class User extends \Core\Controller
             // validation
 
             $this->register($f);
+
+            $rememberMe = isset($f['remember']) && $f['remember'] === 'on';
+            if ($rememberMe) {
+                setcookie('remember_me', '1', time() + (60 * 60 * 24 * 30), '/'); // Exemple de durée de validité de 30 jours
+            }
             // TODO: Rappeler la fonction de login pour connecter l'utilisateur
+            //$this->login($f);
+            header("Location: /account");
         }
 
         View::renderTemplate('User/register.html');
