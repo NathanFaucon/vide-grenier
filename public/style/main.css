@@ -10,7 +10,7 @@ body {
 body.light {
   background-color: #ffffff; }
   body.light .content-wrapper {
-    background-color: #256c8f; }
+    background-color: #deeaf0; }
 
 body.dark {
   background-color: #242424; }
@@ -118,7 +118,7 @@ ul.dropdown-menu {
     ul.dropdown-menu li:last-child {
       border: none; }
     ul.dropdown-menu li:nth-child(even) {
-      background-color: #256c8f; }
+      background-color: #deeaf0; }
 
 .tooltip-inner {
   background-color: #44474e;
@@ -626,7 +626,7 @@ video {
 * Content Index
 */
 .content-wrapper {
-  background-color: #256c8f; }
+  background-color: #deeaf0; }
 
 .content-block .cb-header {
   padding: 20px 0;
@@ -652,7 +652,7 @@ video {
     .content-block.head-div.head-arrow .head-arrow-icon {
       position: absolute;
       width: 80px;
-      background-color: #256c8f;
+      background-color: #deeaf0;
       top: 0;
       left: 50%;
       align-items: center;
@@ -1664,7 +1664,7 @@ footer {
     top: 50%;
     left: 50%;
     margin-left: -2px;
-    margin-top: -288px; }
+    margin-top: 100px; }
     .login-wraper .login-window .l-head {
       background-color: #ffffff;
       padding: 40px;
@@ -1679,7 +1679,7 @@ footer {
           background-color: #fbfdfe; } }
     .login-wraper .login-window .l-form {
       text-align: left;
-      background-color: #256c8f;
+      background-color: #deeaf0;
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       padding: 25px 70px 70px; }
@@ -1722,7 +1722,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
+  margin-top: 200px;
   margin-left: -580px;
   width: 550px; }
   .banner-text .line {
