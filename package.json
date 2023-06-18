@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "watch": "node-sass -w style -o public/style",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "webpack": "^5.87.0"
   }
 }
