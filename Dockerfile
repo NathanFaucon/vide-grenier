@@ -13,7 +13,7 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
 
 WORKDIR /var/www/html
 
-RUN git clone -b matthias https://github.com/NathanFaucon/vide-grenier .
+RUN git clone -b dev https://github.com/NathanFaucon/vide-grenier .
 
 RUN npm install
 
