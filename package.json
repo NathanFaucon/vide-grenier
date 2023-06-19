@@ -6,12 +6,15 @@
   "scripts": {
     "watch": "node-sass -w style -o public/style",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "node-sass --output-style compressed -o dist/css style/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^9.0.0",
     "webpack": "^5.87.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }

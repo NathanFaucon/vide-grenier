@@ -12,9 +12,8 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs
 
 WORKDIR /var/www/html
-RUN git clone https://github.com/NathanFaucon/vide-grenier .
 
-COPY package*.json ./
+RUN git clone https://github.com/NathanFaucon/vide-grenier .
 
 RUN npm install
 
