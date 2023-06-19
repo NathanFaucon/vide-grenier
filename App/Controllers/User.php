@@ -53,7 +53,10 @@ class User extends \Core\Controller
             // validation
 
             $this->register($f);
-            // TODO: Rappeler la fonction de login pour connecter l'utilisateur
+            $rememberMe = isset($f['remember']) && $f['remember'] === 'on';
+            if ($rememberMe) {
+                setcookie('remember_me', '1', time() + (60 * 60 * 24 * 30), '/');
+            }
         }
 
         View::renderTemplate('User/register.html');
