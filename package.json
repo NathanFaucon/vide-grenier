@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "node-sass -w style -o public/style",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass --output-style compressed -o dist/css public/style/"
+    "build": "node-sass --output-style compressed -o dist/css style/"
   },
   "author": "",
   "license": "ISC",
