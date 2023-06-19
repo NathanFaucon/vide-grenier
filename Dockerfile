@@ -24,6 +24,7 @@ RUN npm run build
 # Configurez Apache - Remplacez "my_site.conf" par le nom de votre fichier de configuration Apache.
 COPY ./httpd.conf /etc/apache2/sites-available
 RUN a2ensite httpd.conf && a2dissite 000-default.conf
+RUN a2enmod rewrite
 RUN service apache2 restart
 
 COPY ./sql/import.sql /docker-entrypoint-initdb.d/
