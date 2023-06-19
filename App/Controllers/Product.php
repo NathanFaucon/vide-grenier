@@ -42,6 +42,25 @@ class Product extends \Core\Controller
         View::renderTemplate('Product/Add.html');
     }
 
+    public function sendEmailAction()
+    {
+        if(isset($_POST['submit'])){
+            $to = $_POST['email'];
+            $subject = $_POST['title'];
+            $message = $_POST['message'];
+            $headers = 'From: webmaster@example.com' . "\r\n" .
+                'Reply-To: ' . $to . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
+
+            if(mail($to, $subject, $message, $headers)){
+                echo "Email sent successfully";
+            }else{
+                echo "Failed to send email";
+            }
+        }
+        header("Location: /");
+    }
+
     /**
      * Affiche la page d'un produit
      * @return void

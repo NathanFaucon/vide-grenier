@@ -134,6 +134,7 @@ class User extends \Core\Controller
     }
 
 
+
     /**
      * Logout: Delete cookie and session. Returns true if everything is okay,
      * otherwise turns false.
