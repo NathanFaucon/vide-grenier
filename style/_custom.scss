@@ -513,9 +513,10 @@ video {
 
 .preview-article {
   height: 450px;
+  text-align: center;
   img {
     object-fit: cover;
-    width: 100%;
+    width: auto;
     height: 100%;
   }
 }

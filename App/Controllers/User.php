@@ -25,7 +25,6 @@ class User extends \Core\Controller
     {
         if(isset($_POST['submit'])){
             $f = $_POST;
-
             // TODO: Validation
 
             $this->login($f);
@@ -56,7 +55,6 @@ class User extends \Core\Controller
             // validation
 
             $this->register($f);
-
             $rememberMe = isset($f['remember']) && $f['remember'] === 'on';
             if ($rememberMe) {
                 setcookie('remember_me', '1', time() + (60 * 60 * 24 * 30), '/'); // Exemple de durée de validité de 30 jours
@@ -170,3 +168,4 @@ class User extends \Core\Controller
     }
 
 }
+?>
