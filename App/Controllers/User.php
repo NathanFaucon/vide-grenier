@@ -60,7 +60,7 @@ class User extends \Core\Controller
                 setcookie('remember_me', '1', time() + (60 * 60 * 24 * 30), '/'); // Exemple de durée de validité de 30 jours
             }
             // TODO: Rappeler la fonction de login pour connecter l'utilisateur
-            //$this->login($f);
+            $this->login($f);
             header("Location: /account");
         }
 
