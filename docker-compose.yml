@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   web:
+    container_name: pre-prod-web
     build: .
     ports:
       - "8080:80"
@@ -10,6 +11,7 @@ services:
     links:
       - db
   db:
+    container_name: pre-prod-db
     platform: linux/x86_64
     image: mysql:5.7
     restart: always
